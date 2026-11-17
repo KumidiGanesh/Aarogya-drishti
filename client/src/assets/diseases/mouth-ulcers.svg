@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title">
+  <title id="title">Simple mouth illustration with a small highlighted area</title>
+  <rect width="640" height="360" rx="28" fill="#eaf5ff"/>
+  <path d="M92 180c62-92 148-126 228-126s166 34 228 126c-62 92-148 126-228 126S154 272 92 180Z" fill="#fff" stroke="#123b66" stroke-width="12"/>
+  <path d="M136 180c60-54 120-76 184-76s124 22 184 76c-60 54-120 76-184 76s-124-22-184-76Z" fill="#f3b4b1"/>
+  <path d="M182 153c38-24 82-35 138-35s100 11 138 35v23H182Zm0 31h276v23c-38 24-82 35-138 35s-100-11-138-35Z" fill="#fff" stroke="#d3e2ef" stroke-width="4"/>
+  <circle cx="320" cy="188" r="13" fill="#2196f3" opacity=".8"/>
+  <circle cx="320" cy="188" r="27" fill="none" stroke="#2196f3" stroke-width="5" opacity=".45"/>
+</svg>

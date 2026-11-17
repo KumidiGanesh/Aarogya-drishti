@@ -1,0 +1,229 @@
+const express = require('express');
+const authenticate = require('../middleware/authenticate');
+const authorize = require('../middleware/authorize');
+const requirePermission = require('../middleware/requirePermission');
+const validate = require('../middleware/validate');
+const controller = require('./controller');
+const {
+  dashboardSchema,
+  riskCasesSchema,
+  screeningAnalyticsSchema,
+  appointmentsAnalyticsSchema,
+  hospitalsListSchema,
+  managersListSchema,
+  doctorsListSchema,
+  patientsListSchema,
+  registrationsListSchema,
+  activitiesSchema,
+  assignScreeningDoctorSchema,
+  screeningFollowUpSchema,
+  updateAppointmentStatusSchema,
+  updateFacilityStatusSchema,
+  assignFacilityManagerSchema,
+  createUserSchema,
+  listUsersSchema,
+  userIdSchema,
+  updateUserSchema,
+  reviewDoctorRegistrationSchema,
+  reviewAdminRegistrationSchema,
+  reportSchema,
+  auditLogsSchema,
+  updateRolePermissionsSchema,
+  facilityDirectoryListSchema,
+  facilityDirectoryCreateSchema,
+  facilityDirectoryUpdateSchema,
+} = require('./validators');
+
+const router = express.Router();
+router.use(authenticate, authorize('super_admin', 'admin'));
+
+router.get(
+  '/dashboard',
+  requirePermission('users:read'),
+  validate(dashboardSchema),
+  controller.dashboard,
+);
+router.get(
+  '/dashboard/overview',
+  requirePermission('users:read'),
+  validate(dashboardSchema),
+  controller.dashboard,
+);
+router.get(
+  '/dashboard/screenings',
+  requirePermission('users:read'),
+  validate(screeningAnalyticsSchema),
+  controller.screeningAnalytics,
+);
+router.get(
+  '/dashboard/risk-cases',
+  authorize('super_admin'),
+  requirePermission('users:read'),
+  validate(riskCasesSchema),
+  controller.riskCases,
+);
+router.get(
+  '/dashboard/appointments',
+  requirePermission('users:read'),
+  validate(appointmentsAnalyticsSchema),
+  controller.appointmentManagement,
+);
+router.get(
+  '/hospitals',
+  requirePermission('users:read'),
+  validate(hospitalsListSchema),
+  controller.listHospitals,
+);
+router.get(
+  '/facilities',
+  authorize('super_admin'),
+  requirePermission('users:read'),
+  validate(facilityDirectoryListSchema),
+  controller.listFacilityDirectory,
+);
+router.post(
+  '/facilities',
+  authorize('super_admin'),
+  requirePermission('users:manage'),
+  validate(facilityDirectoryCreateSchema),
+  controller.createFacilityDirectoryEntry,
+);
+router.put(
+  '/facilities/:id',
+  authorize('super_admin'),
+  requirePermission('users:manage'),
+  validate(facilityDirectoryUpdateSchema),
+  controller.updateFacilityDirectoryEntry,
+);
+router.put(
+  '/facilities/:id/status',
+  authorize('super_admin'),
+  requirePermission('users:manage'),
+  validate(updateFacilityStatusSchema),
+  controller.updateFacilityStatus,
+);
+router.put(
+  '/facilities/:id/manager',
+  authorize('super_admin'),
+  requirePermission('users:manage'),
+  validate(assignFacilityManagerSchema),
+  controller.assignFacilityManager,
+);
+router.get(
+  '/managers',
+  authorize('super_admin'),
+  requirePermission('users:read'),
+  validate(managersListSchema),
+  controller.listManagers,
+);
+router.get(
+  '/doctors',
+  requirePermission('users:read'),
+  validate(doctorsListSchema),
+  controller.listDoctors,
+);
+router.get(
+  '/patients',
+  requirePermission('patients:read'),
+  validate(patientsListSchema),
+  controller.listPatients,
+);
+router.get(
+  '/registrations',
+  authorize('super_admin'),
+  requirePermission('users:read'),
+  validate(registrationsListSchema),
+  controller.listRegistrations,
+);
+router.get(
+  '/activities',
+  requirePermission('users:read'),
+  validate(activitiesSchema),
+  controller.listActivities,
+);
+router.put(
+  '/screenings/:id/doctor',
+  authorize('super_admin'),
+  requirePermission('users:manage'),
+  validate(assignScreeningDoctorSchema),
+  controller.assignScreeningDoctor,
+);
+router.put(
+  '/screenings/:id/follow-up',
+  authorize('super_admin'),
+  requirePermission('users:manage'),
+  validate(screeningFollowUpSchema),
+  controller.updateScreeningFollowUp,
+);
+router.put(
+  '/appointments/:id/status',
+  authorize('super_admin'),
+  requirePermission('appointments:manage'),
+  validate(updateAppointmentStatusSchema),
+  controller.updateAppointmentStatus,
+);
+router.get(
+  '/roles',
+  authorize('super_admin'),
+  requirePermission('roles:manage'),
+  controller.listRoles,
+);
+router.put(
+  '/roles/:name/permissions',
+  authorize('super_admin'),
+  requirePermission('roles:manage'),
+  validate(updateRolePermissionsSchema),
+  controller.updateRolePermissions,
+);
+router.post(
+  '/users',
+  requirePermission('users:manage'),
+  validate(createUserSchema),
+  controller.createUser,
+);
+router.get(
+  '/users',
+  requirePermission('users:read'),
+  validate(listUsersSchema),
+  controller.listUsers,
+);
+router.get(
+  '/users/:id',
+  requirePermission('users:read'),
+  validate(userIdSchema),
+  controller.getUser,
+);
+router.put(
+  '/users/:id',
+  requirePermission('users:manage'),
+  validate(updateUserSchema),
+  controller.updateUser,
+);
+router.put(
+  '/users/:id/doctor-registration',
+  requirePermission('users:manage'),
+  validate(reviewDoctorRegistrationSchema),
+  controller.reviewDoctorRegistration,
+);
+router.put(
+  '/users/:id/admin-registration',
+  authorize('super_admin'),
+  requirePermission('users:manage'),
+  validate(reviewAdminRegistrationSchema),
+  controller.reviewAdminRegistration,
+);
+router.delete(
+  '/users/:id',
+  requirePermission('users:manage'),
+  validate(userIdSchema),
+  controller.deleteUser,
+);
+router.get('/reports', requirePermission('export'), validate(reportSchema), controller.report);
+router.get(
+  '/audit-logs',
+  requirePermission('users:read'),
+  validate(auditLogsSchema),
+  controller.auditLogs,
+);
+
+module.exports = router;

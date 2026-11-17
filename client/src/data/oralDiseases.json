@@ -1,0 +1,662 @@
+[
+  {
+    "id": "mouth-ulcers",
+    "name_en": "Mouth Ulcers",
+    "name_te": "నోటి పుండ్లు",
+    "name_hi": "मुंह के छाले",
+    "name_or": "ପାଟି ଘା",
+    "image": "mouth-ulcers.svg",
+    "clinical_photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Aphthous_Stomatitis_in_the_mouth.jpg/960px-Aphthous_Stomatitis_in_the_mouth.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Aphthous_Stomatitis_in_the_mouth.jpg",
+      "credit": "RaydenAG",
+      "license": "CC BY-SA 4.0"
+    },
+    "image_credit": "Original, non-graphic educational illustration created for Aarogya Drishti.",
+    "short_description": "A small sore can form on the soft lining inside the mouth. Many causes are possible, and a clinician can help assess a sore that does not heal.",
+    "common_symptoms": [
+      "A round or oval sore inside the mouth",
+      "Soreness when eating or speaking"
+    ],
+    "risk_factors": ["Mouth irritation or accidental biting", "Stress or some health conditions"],
+    "prevention_and_hygiene": [
+      "Brush gently twice daily with fluoride toothpaste.",
+      "Avoid foods that irritate a sore and keep the mouth clean."
+    ],
+    "when_to_consult_doctor": "See a doctor or dentist if a sore lasts more than 2 weeks, keeps returning, or makes eating difficult.",
+    "category": "inflammatory"
+  },
+  {
+    "id": "oral-leukoplakia",
+    "name_en": "Oral Leukoplakia",
+    "name_te": "నోటి ల్యూకోప్లాకియా (తెల్ల మచ్చలు)",
+    "name_hi": "मुख का ल्यूकोप्लाकिया",
+    "name_or": "ମୁଖର ଲ୍ୟୁକୋପ୍ଲାକିଆ",
+    "image": "oral-leukoplakia.svg",
+    "clinical_photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Leukoplakia.jpg/960px-Leukoplakia.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Leukoplakia.jpg",
+      "credit": "National Cancer Institute; photographer unknown",
+      "license": "Public domain"
+    },
+    "image_credit": "Original, non-graphic educational illustration created for Aarogya Drishti.",
+    "short_description": "A white patch may appear on the lining of the mouth. Only a qualified clinician can assess what is causing it.",
+    "common_symptoms": [
+      "A white patch that does not rub away",
+      "A patch that may feel rough or thick"
+    ],
+    "risk_factors": ["Tobacco, gutkha, or areca nut use", "Long-term irritation inside the mouth"],
+    "prevention_and_hygiene": [
+      "Avoid tobacco, gutkha, and areca nut; ask a health worker about support.",
+      "Brush twice daily with fluoride toothpaste and attend regular dental checks."
+    ],
+    "when_to_consult_doctor": "Any white patch or non-healing ulcer lasting more than 2 weeks needs a doctor visit.",
+    "category": "lesions_cancers"
+  },
+  {
+    "id": "oral-erythroplakia",
+    "name_en": "Oral Erythroplakia",
+    "name_te": "నోటి ఎరిత్రోప్లాకియా (ఎర్ర మచ్చలు)",
+    "name_hi": "मुख का एरिथ्रोप्लाकिया",
+    "name_or": "ମୁଖର ଏରିଥ୍ରୋପ୍ଲାକିଆ",
+    "image": "oral-erythroplakia.svg",
+    "clinical_photo": {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/a43e/10644603/aa0fea9dc846/12903_2023_3619_Fig1_HTML.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10644603/",
+      "credit": "Jenny Öhman et al.",
+      "license": "CC BY 4.0"
+    },
+    "image_credit": "Original, non-graphic educational illustration created for Aarogya Drishti.",
+    "short_description": "A persistent red patch can occur on the mouth lining. It needs professional assessment and cannot be identified from appearance alone.",
+    "common_symptoms": [
+      "A red area that remains on the mouth lining",
+      "A smooth or velvety-looking patch"
+    ],
+    "risk_factors": ["Tobacco, gutkha, or areca nut use", "Long-term irritation of the mouth"],
+    "prevention_and_hygiene": [
+      "Avoid tobacco, gutkha, and areca nut and seek help to stop.",
+      "Keep regular dental check-ups and brush twice daily with fluoride toothpaste."
+    ],
+    "when_to_consult_doctor": "Any red patch or non-healing ulcer lasting more than 2 weeks needs a doctor visit.",
+    "category": "lesions_cancers"
+  },
+  {
+    "id": "oral-submucous-fibrosis",
+    "name_en": "Oral Submucous Fibrosis (OSMF)",
+    "name_te": "నోటి సబ్‌మ్యూకస్ ఫైబ్రోసిస్",
+    "name_hi": "मुख का सबम्यूकस फाइब्रोसिस",
+    "name_or": "ମୁଖର ସବମ୍ୟୁକସ୍ ଫାଇବ୍ରୋସିସ୍",
+    "image": "oral-submucous-fibrosis.svg",
+    "clinical_photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Oral_submucous_fibrosis.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Oral_submucous_fibrosis.jpg",
+      "credit": "Saivishnu.ponnapalli",
+      "license": "CC BY-SA 4.0"
+    },
+    "image_credit": "Original, non-graphic educational illustration created for Aarogya Drishti.",
+    "short_description": "This condition can make the inside of the mouth feel tight and make opening the mouth harder. A doctor or dentist should assess these changes.",
+    "common_symptoms": [
+      "Tightness or burning in the mouth",
+      "Difficulty opening the mouth or eating spicy food"
+    ],
+    "risk_factors": [
+      "Areca nut, betel quid, or gutkha use",
+      "Use of products that contain areca nut"
+    ],
+    "prevention_and_hygiene": [
+      "Stop areca nut, gutkha, and tobacco use; ask a health worker for support.",
+      "Attend regular dental checks and keep the mouth clean."
+    ],
+    "when_to_consult_doctor": "Arrange a doctor visit for mouth tightness or reduced opening. Any non-healing ulcer or white/red patch lasting more than 2 weeks also needs a doctor visit.",
+    "category": "lesions_cancers"
+  },
+  {
+    "id": "oral-cancer",
+    "name_en": "Oral Cancer",
+    "name_te": "నోటి క్యాన్సర్",
+    "name_hi": "मुंह का कैंसर",
+    "name_or": "ମୁଖ କର୍କଟ",
+    "image": "oral-cancer.svg",
+    "clinical_photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/PLoS_oral_cancer.png/960px-PLoS_oral_cancer.png",
+      "source_url": "https://commons.wikimedia.org/wiki/File:PLoS_oral_cancer.png",
+      "credit": "Luca Pastore, Maria Luisa Fiorella, Raffaele Fiorella, Lorenzo Lo Muzio",
+      "license": "CC BY 2.5"
+    },
+    "image_credit": "Original, non-graphic educational illustration created for Aarogya Drishti.",
+    "short_description": "Cancer can affect parts of the mouth. A sore, lump, or patch can have many causes; only a qualified clinician can assess it.",
+    "common_symptoms": [
+      "A sore, lump, or patch that does not heal",
+      "Trouble chewing, swallowing, or moving the tongue"
+    ],
+    "risk_factors": ["Tobacco, gutkha, or areca nut use", "Heavy alcohol use can add to risk"],
+    "prevention_and_hygiene": [
+      "Avoid tobacco, gutkha, and areca nut; ask for help to stop.",
+      "Attend regular mouth checks and brush twice daily with fluoride toothpaste."
+    ],
+    "when_to_consult_doctor": "Any non-healing ulcer or white/red patch lasting more than 2 weeks needs a doctor visit. Seek prompt care for a new lump or difficulty swallowing.",
+    "category": "lesions_cancers"
+  },
+  {
+    "id": "gingivitis",
+    "name_en": "Gingivitis",
+    "name_te": "చిగుళ్ల వాపు",
+    "name_hi": "मसूड़ों की सूजन",
+    "name_or": "ମାଢ଼ିର ପ୍ରଦାହ",
+    "image": "gingivitis.svg",
+    "clinical_photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Gingivitis-before-and-after-3.jpg/960px-Gingivitis-before-and-after-3.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gingivitis-before-and-after-3.jpg",
+      "credit": "Onetimeuseaccount",
+      "license": "CC0"
+    },
+    "image_credit": "Original, non-graphic educational illustration created for Aarogya Drishti.",
+    "short_description": "Gingivitis is irritation and swelling of the gums, often linked with plaque around the teeth.",
+    "common_symptoms": ["Red or puffy gums", "Gums that bleed during brushing"],
+    "risk_factors": ["Plaque left on teeth", "Smoking or difficulty cleaning between teeth"],
+    "prevention_and_hygiene": [
+      "Brush twice daily with fluoride toothpaste and clean between teeth.",
+      "Visit a dentist regularly for advice on gum care."
+    ],
+    "when_to_consult_doctor": "See a dentist if bleeding or swelling continues, or if you have pain or loose teeth.",
+    "category": "gum_teeth"
+  },
+  {
+    "id": "periodontitis",
+    "name_en": "Periodontitis",
+    "name_te": "పీరియాడాంటైటిస్ (చిగుళ్ల వ్యాధి)",
+    "name_hi": "पीरियोडोंटाइटिस",
+    "name_or": "ପିରିଓଡୋଣ୍ଟାଇଟିସ୍",
+    "image": "periodontitis.svg",
+    "clinical_photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Zahnwurzel_freiliegend_2.JPG/960px-Zahnwurzel_freiliegend_2.JPG",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Zahnwurzel_freiliegend_2.JPG",
+      "credit": "Bin im Garten",
+      "license": "CC BY 4.0"
+    },
+    "image_credit": "Original, non-graphic educational illustration created for Aarogya Drishti.",
+    "short_description": "Long-lasting gum inflammation can affect the tissues that hold teeth in place. A dentist can check gum health.",
+    "common_symptoms": [
+      "Gums that bleed or pull away from teeth",
+      "Bad breath or teeth that feel loose"
+    ],
+    "risk_factors": [
+      "Untreated gum inflammation",
+      "Tobacco use or some long-term health conditions"
+    ],
+    "prevention_and_hygiene": [
+      "Brush twice daily with fluoride toothpaste and clean between teeth.",
+      "Avoid tobacco and keep regular dental appointments."
+    ],
+    "when_to_consult_doctor": "Arrange a dental visit for ongoing bleeding, gum changes, or any loose tooth.",
+    "category": "gum_teeth"
+  },
+  {
+    "id": "tooth-decay",
+    "name_en": "Tooth Decay",
+    "name_te": "దంత క్షయం",
+    "name_hi": "दाँतों की सड़न",
+    "name_or": "ଦାନ୍ତ କ୍ଷୟ",
+    "image": "tooth-decay.svg",
+    "clinical_photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Dental_Caries_Lower_Left_First_Molar_01.jpg/960px-Dental_Caries_Lower_Left_First_Molar_01.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dental_Caries_Lower_Left_First_Molar_01.jpg",
+      "credit": "Dr. Yogesh",
+      "license": "CC BY-SA 4.0"
+    },
+    "image_credit": "Original, non-graphic educational illustration created for Aarogya Drishti.",
+    "short_description": "Tooth decay damages the hard outer part of a tooth. Early changes may not hurt, so regular dental checks matter.",
+    "common_symptoms": ["Tooth sensitivity or pain", "A visible spot or hole in a tooth"],
+    "risk_factors": [
+      "Frequent sugary food or drinks",
+      "Not brushing regularly with fluoride toothpaste"
+    ],
+    "prevention_and_hygiene": [
+      "Brush twice daily with fluoride toothpaste.",
+      "Limit sugary snacks and drinks and attend regular dental checks."
+    ],
+    "when_to_consult_doctor": "See a dentist for tooth pain, sensitivity, or a visible change in a tooth.",
+    "category": "gum_teeth"
+  },
+  {
+    "id": "oral-thrush",
+    "name_en": "Oral Thrush",
+    "name_te": "నోటి థ్రష్",
+    "name_hi": "मुंह का थ्रश",
+    "name_or": "ମୁଖ ଥ୍ରଶ୍",
+    "image": "oral-thrush.svg",
+    "clinical_photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Oral_thrush_Aphthae_Candida_albicans._PHIL_1217_lores.jpg/960px-Oral_thrush_Aphthae_Candida_albicans._PHIL_1217_lores.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Oral_thrush_Aphthae_Candida_albicans._PHIL_1217_lores.jpg",
+      "credit": "Centers for Disease Control and Prevention (CDC)",
+      "license": "Public domain"
+    },
+    "image_credit": "Original, non-graphic educational illustration created for Aarogya Drishti.",
+    "short_description": "Oral thrush is a yeast overgrowth in the mouth. A clinician can assess mouth changes and decide what care is needed.",
+    "common_symptoms": [
+      "Creamy-looking areas on the tongue or cheeks",
+      "Soreness or an altered taste"
+    ],
+    "risk_factors": [
+      "Some medicines or health conditions",
+      "Dry mouth or dentures that do not fit well"
+    ],
+    "prevention_and_hygiene": [
+      "Clean teeth and dentures every day.",
+      "Drink water and ask a clinician about ongoing mouth dryness."
+    ],
+    "when_to_consult_doctor": "Consult a clinician for white areas, mouth soreness, or trouble swallowing, especially if symptoms persist.",
+    "category": "infections"
+  },
+  {
+    "id": "geographic-tongue",
+    "name_en": "Geographic Tongue",
+    "name_te": "జియోగ్రాఫిక్ నాలుక",
+    "name_hi": "भौगोलिक जीभ",
+    "name_or": "ଭୌଗୋଳିକ ଜିଭ",
+    "image": "geographic-tongue.svg",
+    "clinical_photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Geographic_tongue_%28benign_migratory_glossitis%29_%E2%80%93_adult_female.jpg/960px-Geographic_tongue_%28benign_migratory_glossitis%29_%E2%80%93_adult_female.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Geographic_tongue_(benign_migratory_glossitis)_%E2%80%93_adult_female.jpg",
+      "credit": "StephanieFrazier",
+      "license": "CC BY 4.0"
+    },
+    "image_credit": "Original, non-graphic educational illustration created for Aarogya Drishti.",
+    "short_description": "Some tongues have smooth patches that change shape or place over time. A dentist can check if a tongue change needs attention.",
+    "common_symptoms": [
+      "Smooth red patches with pale borders",
+      "Patches that may move over days or weeks"
+    ],
+    "risk_factors": [
+      "The cause is not always known",
+      "Some people notice irritation from certain foods"
+    ],
+    "prevention_and_hygiene": [
+      "Brush teeth and tongue gently.",
+      "Avoid foods that cause irritation and drink enough water."
+    ],
+    "when_to_consult_doctor": "Ask a dentist about a new or painful tongue change, or if it does not improve.",
+    "category": "inflammatory"
+  },
+  {
+    "id": "oral-lichen-planus",
+    "name_en": "Oral Lichen Planus",
+    "name_te": "నోటి లైకెన్ ప్లానస్",
+    "name_hi": "मुख का लाइकेन प्लेनस",
+    "name_or": "ମୁଖର ଲାଇକେନ୍ ପ୍ଲାନସ୍",
+    "image": "oral-lichen-planus.svg",
+    "clinical_photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Lichen_planus.jpg/960px-Lichen_planus.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lichen_planus.jpg",
+      "credit": "Ian Furst",
+      "license": "CC BY-SA 4.0"
+    },
+    "image_credit": "Original, non-graphic educational illustration created for Aarogya Drishti.",
+    "short_description": "This long-term inflammatory condition can affect the lining of the mouth. It is not something a person can confirm by looking at it.",
+    "common_symptoms": [
+      "Fine white lines or sore areas inside the cheeks",
+      "Burning or discomfort with some foods"
+    ],
+    "risk_factors": [
+      "The exact cause may not be clear",
+      "Some medicines or immune responses may be linked"
+    ],
+    "prevention_and_hygiene": [
+      "Brush gently twice daily with fluoride toothpaste.",
+      "Avoid tobacco and keep regular dental appointments."
+    ],
+    "when_to_consult_doctor": "See a dentist or doctor for mouth sores, persistent burning, or any lasting change.",
+    "category": "inflammatory"
+  },
+  {
+    "id": "dental-abscess",
+    "name_en": "Dental Abscess",
+    "name_te": "దంత చీము గడ్డ",
+    "name_hi": "दाँत में फोड़ा",
+    "name_or": "ଦାନ୍ତରେ ପୁଜ",
+    "image": "dental-abscess.svg",
+    "clinical_photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Abscessed_tooth_periapical_radiograph.jpg/960px-Abscessed_tooth_periapical_radiograph.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Abscessed_tooth_periapical_radiograph.jpg",
+      "credit": "Coronation Dental Specialty Group",
+      "license": "CC BY-SA 3.0"
+    },
+    "image_credit": "Original, non-graphic educational illustration created for Aarogya Drishti.",
+    "short_description": "A dental abscess is a pocket of infection near a tooth or gum. It needs timely assessment by a dentist.",
+    "common_symptoms": ["Strong tooth or gum pain", "Swelling, bad taste, or fever"],
+    "risk_factors": ["Untreated tooth decay", "A cracked tooth or gum disease"],
+    "prevention_and_hygiene": [
+      "Brush twice daily with fluoride toothpaste and attend dental checks.",
+      "Seek dental care early for tooth pain."
+    ],
+    "when_to_consult_doctor": "Contact a dentist promptly for swelling or severe tooth pain. Seek urgent care for facial swelling, fever, or trouble breathing or swallowing.",
+    "category": "infections"
+  },
+  {
+    "id": "cold-sores",
+    "name_en": "Cold Sores",
+    "name_te": "జలుబు పుండ్లు",
+    "name_hi": "कोल्ड सोर",
+    "name_or": "ଥଣ୍ଡା ଘା",
+    "image": "cold-sores.svg",
+    "clinical_photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Herpes_labialis.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Herpes_labialis.jpg",
+      "credit": "Metju12",
+      "license": "Public domain"
+    },
+    "image_credit": "Original, non-graphic educational illustration created for Aarogya Drishti.",
+    "short_description": "Cold sores are small blisters, often on or near the lips. They are commonly linked to a virus and can spread through close contact.",
+    "common_symptoms": [
+      "Tingling or itching near the lips",
+      "Small grouped blisters that later form a crust"
+    ],
+    "risk_factors": [
+      "Close contact with an active sore",
+      "Illness, stress, or sunlight may trigger a return"
+    ],
+    "prevention_and_hygiene": [
+      "Avoid sharing cups, towels, or lip products during an outbreak.",
+      "Wash hands after touching the area and avoid touching the eyes."
+    ],
+    "when_to_consult_doctor": "Consult a clinician if sores are severe, often return, affect the eyes, or do not heal.",
+    "category": "infections"
+  },
+  {
+    "id": "burning-mouth-syndrome",
+    "name_en": "Burning Mouth Syndrome",
+    "name_te": "నోటి మంట సిండ్రోమ్",
+    "name_hi": "माउथ बर्निंग सिंड्रोम",
+    "name_or": "ମୁଖ ଜଳାପୋଡ଼ା ସିଣ୍ଡ୍ରୋମ୍",
+    "image": "burning-mouth-syndrome.svg",
+    "image_credit": "Original, non-graphic educational illustration created for Aarogya Drishti.",
+    "short_description": "A lasting burning feeling in the mouth can have many causes. A clinician can check for possible reasons and support next steps.",
+    "common_symptoms": [
+      "Burning or tingling of the tongue or mouth",
+      "Dry mouth or a changed taste"
+    ],
+    "risk_factors": ["Dry mouth or some medicines", "Some health or nutrition conditions"],
+    "prevention_and_hygiene": [
+      "Drink water and use a soft toothbrush.",
+      "Tell a clinician about medicines and other symptoms; do not stop prescribed medicines on your own."
+    ],
+    "when_to_consult_doctor": "Arrange a doctor or dentist visit if burning continues or affects eating, drinking, or sleep.",
+    "category": "other"
+  },
+  {
+    "id": "oral-candidiasis",
+    "name_en": "Oral Candidiasis",
+    "name_te": "నోటి కాండిడియాసిస్",
+    "name_hi": "मुख का कैंडिडायसिस",
+    "name_or": "ମୁଖ କ୍ୟାଣ୍ଡିଡିଆସିସ୍",
+    "image": "oral-candidiasis.svg",
+    "clinical_photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Human_tongue_infected_with_oral_candidiasis.jpg/960px-Human_tongue_infected_with_oral_candidiasis.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Human_tongue_infected_with_oral_candidiasis.jpg",
+      "credit": "James Heilman, MD",
+      "license": "CC BY-SA 3.0"
+    },
+    "image_credit": "Original, non-graphic educational illustration created for Aarogya Drishti.",
+    "short_description": "Candida is a yeast that can sometimes grow too much in the mouth. A clinician can assess symptoms and decide what they mean.",
+    "common_symptoms": [
+      "Sore mouth or white-looking areas",
+      "A changed taste or discomfort while eating"
+    ],
+    "risk_factors": ["Some medicines or health conditions", "Dry mouth or dentures"],
+    "prevention_and_hygiene": [
+      "Clean teeth and dentures daily and brush gently.",
+      "Ask a clinician for advice if mouth dryness or soreness continues."
+    ],
+    "when_to_consult_doctor": "Consult a clinician for persistent white areas, soreness, or difficulty swallowing.",
+    "category": "infections"
+  },
+  {
+    "id": "proliferative-verrucous-leukoplakia",
+    "name_en": "Proliferative Verrucous Leukoplakia (PVL)",
+    "name_te": "ప్రొలిఫరేటివ్ వెరుకస్ ల్యూకోప్లాకియా",
+    "name_hi": "प्रोलिफेरेटिव वेरुकस ल्यूकोप्लाकिया",
+    "name_or": "ପ୍ରୋଲିଫେରେଟିଭ୍ ଭେରୁକସ୍ ଲ୍ୟୁକୋପ୍ଲାକିଆ",
+    "image": "proliferative-verrucous-leukoplakia.svg",
+    "clinical_photo": {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/d317/13703065/c0a7619c596b/dentistry-14-00627-g001.webp",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13703065/",
+      "credit": "Oliver V. Waldvogel et al.",
+      "license": "CC BY 4.0"
+    },
+    "image_credit": "Original, non-graphic educational illustration created for Aarogya Drishti.",
+    "short_description": "PVL is a term for white patches that may grow or return over time. A specialist clinician must assess persistent patches.",
+    "common_symptoms": [
+      "One or more white patches in the mouth",
+      "Patches that slowly spread or return"
+    ],
+    "risk_factors": ["The cause is not fully understood", "It can occur even without tobacco use"],
+    "prevention_and_hygiene": [
+      "Avoid tobacco, gutkha, and areca nut.",
+      "Keep scheduled dental or specialist follow-up and brush gently."
+    ],
+    "when_to_consult_doctor": "Any non-healing ulcer or white/red patch lasting more than 2 weeks needs a doctor visit.",
+    "category": "lesions_cancers"
+  },
+  {
+    "id": "actinic-cheilitis",
+    "name_en": "Actinic Cheilitis",
+    "name_te": "పెదవుల యాక్టినిక్ చీలైటిస్",
+    "name_hi": "एक्टिनिक चीलाइटिस",
+    "name_or": "ଆକ୍ଟିନିକ୍ ଚିଲାଇଟିସ୍",
+    "image": "actinic-cheilitis.svg",
+    "clinical_photo": {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f813/12100635/427567e8285b/OTO2-9-e70132-g001.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12100635/",
+      "credit": "Victoria Kuta and S. Mark Taylor",
+      "license": "CC BY 4.0"
+    },
+    "image_credit": "Original, non-graphic educational illustration created for Aarogya Drishti.",
+    "short_description": "Long-term sun exposure can make the lips dry or rough. A health professional can check lasting lip changes.",
+    "common_symptoms": [
+      "Dry, rough, or cracked areas on the lip",
+      "A change in the lip border or colour"
+    ],
+    "risk_factors": [
+      "Long periods in strong sunlight",
+      "Outdoor work without lip or skin sun protection"
+    ],
+    "prevention_and_hygiene": [
+      "Use shade and suitable sun protection for the lips.",
+      "Avoid tobacco and attend regular dental or medical checks."
+    ],
+    "when_to_consult_doctor": "See a doctor for a lasting lip sore or changing patch, especially one that does not heal.",
+    "category": "lesions_cancers"
+  },
+  {
+    "id": "oral-lichenoid-lesions",
+    "name_en": "Oral Lichenoid Lesions",
+    "name_te": "నోటి లైకెనాయిడ్ గాయాలు",
+    "name_hi": "मुख के लाइकेनॉइड घाव",
+    "name_or": "ମୁଖ ଲାଇକେନଏଡ୍ କ୍ଷତ",
+    "image": "oral-lichenoid-lesions.svg",
+    "clinical_photo": {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f18a/10883884/a439ae24d4b6/41415_2024_7063_Fig3_HTML.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10883884/",
+      "credit": "Rebecca Binnie et al.",
+      "license": "CC BY 4.0"
+    },
+    "image_credit": "Original, non-graphic educational illustration created for Aarogya Drishti.",
+    "short_description": "These are irritated areas in the mouth that can look like other conditions. A clinician can review possible causes.",
+    "common_symptoms": [
+      "White lines or red sore areas",
+      "Burning or discomfort in one part of the mouth"
+    ],
+    "risk_factors": ["Some medicines or dental materials", "The cause may not be clear"],
+    "prevention_and_hygiene": [
+      "Keep teeth clean and attend regular dental visits.",
+      "Tell a clinician about medicines; do not stop them without advice."
+    ],
+    "when_to_consult_doctor": "Ask a dentist or doctor to assess a lasting sore, patch, or mouth irritation.",
+    "category": "inflammatory"
+  },
+  {
+    "id": "oral-lupus-erythematosus",
+    "name_en": "Oral Lupus Erythematosus",
+    "name_te": "నోటి లూపస్ ఎరిథెమాటోసస్",
+    "name_hi": "मुख का ल्यूपस एरिथेमेटोसस",
+    "name_or": "ମୁଖ ଲୁପସ୍ ଏରିଥେମାଟୋସସ୍",
+    "image": "oral-lupus-erythematosus.svg",
+    "clinical_photo": {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f18a/10883884/b9e5a3054500/41415_2024_7063_Fig4_HTML.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10883884/",
+      "credit": "Rebecca Binnie et al.",
+      "license": "CC BY 4.0"
+    },
+    "image_credit": "Original, non-graphic educational illustration created for Aarogya Drishti.",
+    "short_description": "Lupus can sometimes affect the mouth. A clinician should assess mouth sores, especially alongside other health changes.",
+    "common_symptoms": ["Sore areas or red patches in the mouth", "Mouth dryness or discomfort"],
+    "risk_factors": [
+      "A person’s immune system and health history",
+      "Some medicines or illness can affect symptoms"
+    ],
+    "prevention_and_hygiene": [
+      "Brush gently twice daily and keep regular medical and dental visits.",
+      "Tell the care team about new mouth changes and medicines."
+    ],
+    "when_to_consult_doctor": "Contact a doctor if mouth sores persist, worsen, or occur with other new symptoms.",
+    "category": "inflammatory"
+  },
+  {
+    "id": "smokeless-tobacco-keratosis",
+    "name_en": "Smokeless Tobacco Keratosis",
+    "name_te": "పొగాకు నమలడం వల్ల కెరటోసిస్",
+    "name_hi": "बिना धुएँ वाले तंबाकू से केराटोसिस",
+    "name_or": "ଧୂଆଁବିହୀନ ତମାଖୁ କେରାଟୋସିସ୍",
+    "image": "smokeless-tobacco-keratosis.svg",
+    "clinical_photo": {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/ad51/11018213/128f6bc1087d/medi-103-e37771-g001.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11018213/",
+      "credit": "Hassan Hamed Kaabi",
+      "license": "CC BY 4.0"
+    },
+    "image_credit": "Original, non-graphic educational illustration created for Aarogya Drishti.",
+    "short_description": "Tobacco kept in the mouth can irritate the nearby lining and cause a pale or thick area. A clinician should assess lasting changes.",
+    "common_symptoms": [
+      "A pale, thick, or wrinkled area where tobacco is placed",
+      "Mouth irritation"
+    ],
+    "risk_factors": ["Chewing or holding tobacco, gutkha, or related products in the mouth"],
+    "prevention_and_hygiene": [
+      "Stop smokeless tobacco and ask a health worker for help.",
+      "Brush twice daily with fluoride toothpaste and keep regular dental visits."
+    ],
+    "when_to_consult_doctor": "Any non-healing ulcer or white/red patch lasting more than 2 weeks needs a doctor visit.",
+    "category": "lesions_cancers"
+  },
+  {
+    "id": "oral-hairy-leukoplakia",
+    "name_en": "Oral Hairy Leukoplakia",
+    "name_te": "నోటి హెయిరీ ల్యూకోప్లాకియా",
+    "name_hi": "मुख का हेयरी ल्यूकोप्लाकिया",
+    "name_or": "ମୁଖ ହେୟାରି ଲ୍ୟୁକୋପ୍ଲାକିଆ",
+    "image": "oral-hairy-leukoplakia.svg",
+    "clinical_photo": {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/b202/5536144/984331314282/IJD2017-3457479.001.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5536144/",
+      "credit": "Luana L. Martins et al.",
+      "license": "CC BY"
+    },
+    "image_credit": "Original, non-graphic educational illustration created for Aarogya Drishti.",
+    "short_description": "A lasting white, ridged area can form on the side of the tongue. A health professional should assess this change.",
+    "common_symptoms": [
+      "White ridged or folded-looking area on the tongue",
+      "Usually little or no pain"
+    ],
+    "risk_factors": ["Some immune system conditions", "Certain viral infections"],
+    "prevention_and_hygiene": [
+      "Keep regular medical and dental check-ups.",
+      "Brush gently and tell a clinician about new mouth changes."
+    ],
+    "when_to_consult_doctor": "See a clinician for any white tongue patch that remains or changes.",
+    "category": "lesions_cancers"
+  },
+  {
+    "id": "angular-cheilitis",
+    "name_en": "Angular Cheilitis",
+    "name_te": "నోటి మూలల వాపు (యాంగులర్ చీలైటిస్)",
+    "name_hi": "मुंह के कोनों की सूजन",
+    "name_or": "ଓଠ କୋଣର ପ୍ରଦାହ",
+    "image": "angular-cheilitis.svg",
+    "clinical_photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Angular_Cheilitis.JPG/960px-Angular_Cheilitis.JPG",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Angular_Cheilitis.JPG",
+      "credit": "James Heilman, MD",
+      "license": "CC BY-SA 3.0"
+    },
+    "image_credit": "Original, non-graphic educational illustration created for Aarogya Drishti.",
+    "short_description": "The corners of the mouth can become sore or cracked. Dryness and other causes may play a part.",
+    "common_symptoms": [
+      "Cracks or redness at one or both mouth corners",
+      "Soreness when opening the mouth"
+    ],
+    "risk_factors": [
+      "Saliva or moisture collecting at the corners",
+      "Dry lips, dentures, or some health conditions"
+    ],
+    "prevention_and_hygiene": [
+      "Keep the area clean and avoid repeatedly licking the lips.",
+      "Drink water and ask a clinician if cracks keep returning."
+    ],
+    "when_to_consult_doctor": "See a clinician if the corners do not heal, are very painful, or keep cracking.",
+    "category": "inflammatory"
+  },
+  {
+    "id": "dry-mouth-xerostomia",
+    "name_en": "Dry Mouth (Xerostomia)",
+    "name_te": "నోరు ఎండిపోవడం (జిరోస్టోమియా)",
+    "name_hi": "मुंह का सूखापन",
+    "name_or": "ପାଟି ଶୁଖିଯିବା",
+    "image": "dry-mouth-xerostomia.svg",
+    "image_credit": "Original, non-graphic educational illustration created for Aarogya Drishti.",
+    "short_description": "Dry mouth means there is not enough saliva to keep the mouth comfortable. It can affect speaking, eating, and teeth.",
+    "common_symptoms": [
+      "A dry or sticky feeling",
+      "Difficulty swallowing dry food or speaking for long"
+    ],
+    "risk_factors": [
+      "Some medicines or health conditions",
+      "Not drinking enough water or tobacco use"
+    ],
+    "prevention_and_hygiene": [
+      "Sip water often and brush twice daily with fluoride toothpaste.",
+      "Ask a clinician to review ongoing dryness and medicines."
+    ],
+    "when_to_consult_doctor": "Talk with a doctor or dentist if dryness lasts or makes eating, speaking, or swallowing difficult.",
+    "category": "other"
+  },
+  {
+    "id": "oral-herpes",
+    "name_en": "Oral Herpes",
+    "name_te": "నోటి హెర్పెస్",
+    "name_hi": "मुख का हर्पीस",
+    "name_or": "ମୁଖ ହର୍ପିସ୍",
+    "image": "oral-herpes.svg",
+    "clinical_photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Herpes_labialis.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Herpes_labialis.jpg",
+      "credit": "Metju12",
+      "license": "Public domain"
+    },
+    "image_credit": "Original, non-graphic educational illustration created for Aarogya Drishti.",
+    "short_description": "Oral herpes is caused by a common virus and may cause sores around the mouth. A clinician can advise about symptoms and spread.",
+    "common_symptoms": [
+      "Tingling followed by small blisters or sores",
+      "Sores that may crust as they heal"
+    ],
+    "risk_factors": [
+      "Close contact with an active sore",
+      "Illness or stress may be linked with a return"
+    ],
+    "prevention_and_hygiene": [
+      "Avoid kissing or sharing items that touch the mouth during an outbreak.",
+      "Wash hands after touching a sore and avoid touching the eyes."
+    ],
+    "when_to_consult_doctor": "Consult a clinician for severe, frequent, or slow-healing sores, or sores near the eyes.",
+    "category": "infections"
+  }
+]

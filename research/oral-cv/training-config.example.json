@@ -1,0 +1,14 @@
+{
+  "experiment_id": "replace-with-unique-id",
+  "dataset_version": "required-immutable-version",
+  "model_version": "required-source-checkpoint-hash",
+  "seed": 0,
+  "patient_level_split": true,
+  "input_size": [224, 224],
+  "normalization": "document-and-version",
+  "training_split": "train",
+  "validation_split": "validation",
+  "test_split_locked": true,
+  "weights": null,
+  "clinical_validation_status": "not_validated"
+}

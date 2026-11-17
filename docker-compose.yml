@@ -1,0 +1,109 @@
+services:
+  mongo:
+    image: mongo:8
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME:-aarogya}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD:?Set MONGO_INITDB_ROOT_PASSWORD in .env}
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongo_data:/data/db
+    healthcheck:
+      test:
+        [
+          'CMD-SHELL',
+          'mongosh --quiet --username "$$MONGO_INITDB_ROOT_USERNAME" --password "$$MONGO_INITDB_ROOT_PASSWORD" --authenticationDatabase admin --eval "db.adminCommand({ ping: 1 }).ok"',
+        ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+  minio:
+    image: minio/minio:latest
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${STORAGE_ACCESS_KEY:?Set STORAGE_ACCESS_KEY in .env}
+      MINIO_ROOT_PASSWORD: ${STORAGE_SECRET_KEY:?Set STORAGE_SECRET_KEY in .env}
+    ports:
+      - '${STORAGE_PORT:-9000}:9000'
+      - '${MINIO_CONSOLE_PORT:-9001}:9001'
+    volumes:
+      - minio_data:/data
+  server:
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    environment:
+      NODE_ENV: ${NODE_ENV:-development}
+      APP_PORT: 4000
+      MONGODB_URI: mongodb://${MONGO_INITDB_ROOT_USERNAME:-aarogya}:${MONGO_INITDB_ROOT_PASSWORD:?Set MONGO_INITDB_ROOT_PASSWORD in .env}@mongo:27017/${MONGODB_DATABASE:-aarogya_drishti}?authSource=admin
+      MONGODB_DATABASE: ${MONGODB_DATABASE:-aarogya_drishti}
+      MONGO_SERVER_SELECTION_TIMEOUT_MS: ${MONGO_SERVER_SELECTION_TIMEOUT_MS:-5000}
+      MONGO_POOL_MAX: ${MONGO_POOL_MAX:-10}
+      BACKUP_DIR: ${BACKUP_DIR:-./backups}
+      BACKUP_PASSPHRASE: ${BACKUP_PASSPHRASE:?Set BACKUP_PASSPHRASE in .env}
+      JWT_ACCESS_SECRET: ${JWT_ACCESS_SECRET:?Set JWT_ACCESS_SECRET in .env}
+      JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET:?Set JWT_REFRESH_SECRET in .env}
+      JWT_EXPIRES: ${JWT_EXPIRES:-15m}
+      JWT_REFRESH_EXPIRES: ${JWT_REFRESH_EXPIRES:-7d}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:5173}
+      JSON_BODY_LIMIT: ${JSON_BODY_LIMIT:-1mb}
+      RATE_LIMIT_WINDOW_MS: ${RATE_LIMIT_WINDOW_MS:-900000}
+      RATE_LIMIT_MAX: ${RATE_LIMIT_MAX:-300}
+      STORAGE_ENDPOINT: http://minio:9000
+      STORAGE_DRIVER: ${STORAGE_DRIVER:-local}
+      STORAGE_LOCAL_PATH: /app/storage/private
+      STORAGE_REGION: ${STORAGE_REGION:-us-east-1}
+      STORAGE_AUTO_CREATE_BUCKET: ${STORAGE_AUTO_CREATE_BUCKET:-true}
+      STORAGE_BUCKET: ${STORAGE_BUCKET:-aarogya-private}
+      STORAGE_ACCESS_KEY: ${STORAGE_ACCESS_KEY:?Set STORAGE_ACCESS_KEY in .env}
+      STORAGE_SECRET_KEY: ${STORAGE_SECRET_KEY:?Set STORAGE_SECRET_KEY in .env}
+      STORAGE_ENCRYPTION_KEY: ${STORAGE_ENCRYPTION_KEY:?Set STORAGE_ENCRYPTION_KEY in .env}
+      STORAGE_ENCRYPTION_KEY_ID: ${STORAGE_ENCRYPTION_KEY_ID:-storage-key-v1}
+      VIDEO_PROVIDER_KEYS: ${VIDEO_PROVIDER_KEYS:-}
+      VIDEO_DOMAIN: ${VIDEO_DOMAIN:-meet.jit.si}
+      VIDEO_APP_ID: ${VIDEO_APP_ID:-aarogya-demo}
+      VIDEO_JWT_SECRET: ${VIDEO_JWT_SECRET:-}
+      CALL_TOKEN_SECRET: ${CALL_TOKEN_SECRET:-}
+      STUN_URIS: ${STUN_URIS:-}
+      TURN_URIS: ${TURN_URIS:-}
+      TURN_SHARED_SECRET: ${TURN_SHARED_SECRET:-}
+      NOTIFICATION_PROVIDER_KEYS: ${NOTIFICATION_PROVIDER_KEYS:-}
+      NOTIFICATION_PROVIDER: ${NOTIFICATION_PROVIDER:-console}
+      SMS_PROVIDER_URL: ${SMS_PROVIDER_URL:-}
+      SMS_PROVIDER_TOKEN: ${SMS_PROVIDER_TOKEN:-}
+      PUSH_PROVIDER_URL: ${PUSH_PROVIDER_URL:-}
+      PUSH_PROVIDER_TOKEN: ${PUSH_PROVIDER_TOKEN:-}
+      TRANSLATION_PROVIDER_URL: ${TRANSLATION_PROVIDER_URL:-}
+      TRANSLATION_PROVIDER_TOKEN: ${TRANSLATION_PROVIDER_TOKEN:-}
+      SPEECH_TO_TEXT_PROVIDER_URL: ${SPEECH_TO_TEXT_PROVIDER_URL:-}
+      SPEECH_TO_TEXT_PROVIDER_TOKEN: ${SPEECH_TO_TEXT_PROVIDER_TOKEN:-}
+      TEXT_TO_SPEECH_PROVIDER_URL: ${TEXT_TO_SPEECH_PROVIDER_URL:-}
+      TEXT_TO_SPEECH_PROVIDER_TOKEN: ${TEXT_TO_SPEECH_PROVIDER_TOKEN:-}
+      TRUST_PROXY: ${TRUST_PROXY:-false}
+    ports:
+      - '4000:4000'
+    depends_on:
+      mongo:
+        condition: service_healthy
+      minio:
+        condition: service_started
+    command: ['sh', '-c', 'npm run migrate && npm run seed && npm start']
+    volumes:
+      - backup_data:/app/backups
+      - screening_image_data:/app/storage/private
+  client:
+    build:
+      context: ./client
+      args:
+        VITE_API_BASE_URL: /api
+    environment:
+      VIDEO_DOMAIN: ${VIDEO_DOMAIN:-meet.jit.si}
+    ports:
+      - '${CLIENT_PORT:-5173}:8080'
+    depends_on:
+      - server
+volumes:
+  mongo_data:
+  minio_data:
+  backup_data:
+  screening_image_data:

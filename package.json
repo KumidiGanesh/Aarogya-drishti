@@ -1,0 +1,38 @@
+{
+  "name": "aarogya-drishti",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n server,client -c blue,green \"npm:dev --workspace server\" \"npm:dev --workspace client\"",
+    "build": "npm run build --workspace client",
+    "test": "npm run i18n:check && npm run test --workspace server && npm run test --workspace client",
+    "i18n:check": "npm run i18n:check --workspace client",
+    "check:routes": "npm run check:routes --workspace server",
+    "lint": "npm run lint --workspaces --if-present",
+    "format": "prettier --write .",
+    "migrate": "npm run migrate --workspace server",
+    "migrate:rollback": "npm run migrate:rollback --workspace server",
+    "migrate:status": "npm run migrate:status --workspace server",
+    "seed": "npm run seed --workspace server",
+    "seed:facilities": "npm run seed:facilities --workspace server",
+    "db:check": "npm run db:check --workspace server",
+    "db:backup": "npm run db:backup --workspace server",
+    "db:restore": "npm run db:restore --workspace server",
+    "backup": "bash scripts/backup.sh",
+    "restore": "bash scripts/restore.sh",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.5.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,json,css,md}": "prettier --write"
+  }
+}
