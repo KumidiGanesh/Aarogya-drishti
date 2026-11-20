@@ -3,7 +3,7 @@ WORKDIR /app/server
 COPY package*.json ./
 RUN npm install --omit=dev
 COPY server/. .
-COPY docs /app/docs
+
 RUN mkdir -p /app/storage/private /app/backups && chown -R node:node /app
 USER node
 EXPOSE 4000
