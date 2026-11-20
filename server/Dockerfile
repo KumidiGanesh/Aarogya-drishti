@@ -3,16 +3,12 @@ FROM node:22-alpine
 
 WORKDIR /app/server
 
-# Copy backend package files
-COPY server/package*.json ./
+COPY package*.json ./
 
-# Install production dependencies
 RUN npm install --omit=dev
 
-# Copy backend source code
-COPY server/ .
+COPY . .
 
-# Create required storage directories
 RUN mkdir -p /app/storage/private /app/backups \
     && chown -R node:node /app
 
