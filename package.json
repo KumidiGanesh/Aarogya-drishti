@@ -24,7 +24,7 @@
     "db:restore": "npm run db:restore --workspace server",
     "backup": "bash scripts/backup.sh",
     "restore": "bash scripts/restore.sh",
-    "prepare": "husky"
+    "prepare": "husky || true"
   },
   "devDependencies": {
     "concurrently": "^9.1.2",
